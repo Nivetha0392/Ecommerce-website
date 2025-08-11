@@ -10,7 +10,7 @@ const SearchBar = ({ onSearch }) => {
     margin: '10px auto',
     maxWidth: '500px',
     padding: '10px',
-    backgroundColor: '#e6f0ff',
+    backgroundColor: '#babfc0ff',
     borderRadius: '8px',
   };
 
@@ -25,7 +25,7 @@ const SearchBar = ({ onSearch }) => {
 
   const buttonStyle = {
     padding: '5px 20px',
-    backgroundColor: '#494b4bff',
+    backgroundColor: '#353636ff',
     color: 'white',
     border: 'none',
     borderRadius: '0 5px 5px 0',

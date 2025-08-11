@@ -1,18 +1,18 @@
 import React from 'react'
-import Settingdashboard from '../Component/Settingdashboard'
+import Placedorders from '../Component/Placedorders'
 import Navbar from '../Component/Navbar'
 import Footer from '../Component/Footer'
 
-const Setting = () => {
+const Ordersummary = () => {
   return (
     <div>
         <Navbar/>
         
-        <Settingdashboard/>
+        <Placedorders/>
        
         <Footer/>
         </div>
   )
 }
 
-export default Setting
+export default Ordersummary

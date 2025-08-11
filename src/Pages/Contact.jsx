@@ -4,10 +4,13 @@ import Contactdashboard from '../Component/Contactdashboard'
 import Footer from '../Component/Footer'
 
 const Contact = () => {
+
+  
   return (
     <div>
         <Navbar/>
         <Contactdashboard/>
+        
         Contact
         <Footer/>
         </div>

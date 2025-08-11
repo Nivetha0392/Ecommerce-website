@@ -50,7 +50,7 @@ const Signup = () => {
     maxWidth: "400px",
     display: "flex",
     flexDirection: "column",
-    gap: "10px",
+    gap: "8px",
   };
 
   const inputStyle = {
@@ -61,11 +61,11 @@ const Signup = () => {
 
   const labelStyle = {
     fontWeight: "bold",
-    color: "#003366",
+    color: "#111111ff",
   };
 
   const buttonStyle = {
-    backgroundColor: "#007bff",
+    backgroundColor: "#494a4bff",
     color: "white",
     padding: "5px",
     border: "none",
@@ -77,7 +77,7 @@ const Signup = () => {
   return (
     <div style={containerStyle}>
       <form style={formStyle}>
-        <h1>Sign up</h1>
+        <h1 style={{textAlign:"center"}}>Sign up</h1>
         <label style={labelStyle}>First name</label>
         <input type="text" ref={fnameref} style={inputStyle} />
 

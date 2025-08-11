@@ -1,43 +1,50 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import SearchBar from './SearchBar'
-import { FaShoppingCart } from "react-icons/fa";
-import Userproduct from './UserProduct'
-
+import React from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import SearchBar from "./SearchBar";
+import Viewcart from "./Viewcart";
+import UserProduct from "./UserProduct";
 
 const Dashboard = () => {
-
- 
-
   return (
     <div>
       {/* nav-container */}
       <div>
-        <Navbar/>
+        <Navbar />
       </div>
+
       <div>
         {/* search-container */}
-        <div style={{display:'flex',flexDirection:'row', justifyContent:'space-around',alignItems:'center',backgroundColor:'#007bff4f'}}>
-          <div >
-            <SearchBar/>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-around",
+            alignItems: "center",
+            backgroundColor: "#ecf3fa4f",
+            position: "relative",
+          }} >
+          <div>
+            <SearchBar />
           </div>
-          <div style={{backgroundColor:'#007bffff',padding:'5px',borderRadius:'5px'}}>
-              <FaShoppingCart/>
+
+          <div>
+            <Viewcart />
           </div>
         </div>
 
+        {/* Product Section */}
         <div>
-           <Userproduct/>
+          <UserProduct />
         </div>
-
       </div>
+
       {/* footer container */}
-      <div >
-        <Footer/>
+      <div>
+        <Footer />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;

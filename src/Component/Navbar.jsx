@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   // ✅ Inline Styles
   const navStyle = {
-    backgroundColor: '#046475ff', // blue background
+    backgroundColor: '#494a4bff', 
     padding: '15px 30px',
     display: 'flex',
     justifyContent: 'space-between',
@@ -33,13 +33,11 @@ const Navbar = () => {
     fontSize: '16px',
   };
 
-  const linkHoverStyle = {
-    textDecoration: 'underline',
-  };
+ 
 
   return (
     <div style={navStyle}>
-      <h1 style={titleStyle}>Trends Clothing</h1>
+      <h1 style={titleStyle}>🛒ShopperStop</h1>
       <ul style={ulStyle}>
         <li><Link to='/Home' style={linkStyle}>Home</Link></li>
         <li><Link to='/About' style={linkStyle}>About</Link></li>

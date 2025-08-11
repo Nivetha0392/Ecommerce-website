@@ -16,6 +16,14 @@ const Login = () => {
 
     let found = false;
 
+    //Admin login
+
+     if(usref.current.value === "admin123" && passref.current.value === "admin@123"){
+      navi('/Admindashboard')
+      found = true
+    }
+   
+    //User login
     val.user.forEach((cur) => {
       if (
         cur.usname === usref.current.value &&
@@ -60,11 +68,11 @@ const Login = () => {
 
   const labelStyle = {
     fontWeight: "bold",
-    color: "#003366",
+    color: "#0f0f0fff",
   };
 
   const buttonStyle = {
-    backgroundColor: "#007bff",
+    backgroundColor: "#494a4bff",
     color: "white",
     padding: "10px",
     border: "none",
@@ -80,7 +88,7 @@ const Login = () => {
   };
 
   const linkStyle = {
-    color: "#007bff",
+    color: "#494a4bff",
     textAlign: "center",
     cursor: "pointer",
     marginTop: "10px",
@@ -90,6 +98,7 @@ const Login = () => {
   return (
     <div style={containerStyle}>
       <form style={formStyle}>
+        <h1 style={{textAlign:"center"}}>Login</h1>
         <label style={labelStyle}>Username</label>
         <input type="text" ref={usref} style={inputStyle} />
 
