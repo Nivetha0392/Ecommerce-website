@@ -24,7 +24,7 @@ const App = () => {
     setCartItems((prev) => [...prev, product]);
   };
   
-  // Function to Remove item from cart by ID
+  // Function to Remove item from cart by
   const removeFromCart = (productId) => {
     setCartItems((prev) => prev.filter((item) => item.id !== productId));
   };
