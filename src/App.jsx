@@ -32,7 +32,7 @@ const App = () => {
   return (
   <div id="main-container">
      <myContext.Provider value={{user,setUser, cartItems, addToCart,removeFromCart, orderDetails, setOrderDetails}}>
-     <Router>
+     <Router  basename="/Ecommerce-website">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
